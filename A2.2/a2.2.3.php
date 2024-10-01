@@ -24,6 +24,9 @@ fscanf(STDIN, "%d", $n);
     echo "<p> Lista de divisores do número $n: </p>";
   
     echo "<ul>";
+     //Outras opcións: for ($i = intval($n / 2); $i >=2; $i--) {
+     //    for ($i = intdiv($n, 2); $i >=2; $i--) {
+   
     for ($i = floor($n / 2); $i >=2; $i--) {
         if ($n % $i == 0) {
             echo "<li>$i</li>";
